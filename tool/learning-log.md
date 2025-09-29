@@ -6,7 +6,7 @@
 
 ---
 
-### X/X/XX:
+### 09/29/25:
 * [P5play](https://p5play.org/learn/sprite?page=0) to learn about sprite
 * sprite refers to an object, character, or background that can move
   *   So we are able to change its position, length, width, size and shape.
