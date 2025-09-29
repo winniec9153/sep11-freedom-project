@@ -1,8 +1,8 @@
 # Tool Learning Log
 
-## Tool: **X**
+## Tool: **P5play**
 
-## Project: **X**
+## Project: **Guess the Number Game**
 
 ---
 
