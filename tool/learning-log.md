@@ -2,7 +2,7 @@
 
 ## Tool: **P5play**
 
-## Project: **Guess the Number Game**
+## Project: **Budjeting Game**
 
 ---
 
