@@ -46,31 +46,7 @@ function update() {
 }
 ```
 
-### 10/13/25:
-* [P5play-group](https://p5play.org/learn/group?page=0) to learn about Groups(Soft and Dynamic Inheritance)   
-* A collection of and a blueprint for sprites with similar traits and behaviors.
-   * Examples: the dots in Pac Man  
-* You can check how many sprite is in a group through `group.length`.  
- * You can access sprite in groups through indexs, as indexs are arrays  
-	 * In an array it start with 0, not 1.   
-     * 	Example:
-     * 	``` JS
-        dots[5].color = 'green';   
-        ```
-        this shows:   
-       	<img width="720" height="66" alt="image" src="https://github.com/user-attachments/assets/33389ff4-8329-409a-a5a2-375423d63f06" />  
-* You can change all the sprite property in a group:    
-   ``` js 
-   dots.color = 'green';
-   ```    
-	* this makes all the dots green.
-* You can also move all the sprites all at once through the `moveToward` funtion which is really cool(movement funtion).  
-	* Example of that code:     
-   ``` JS
-   dots.moveTowards(mouse);
-   ```
-   * This makes all the dots move where my arrow goes.
-* Something I will try next is combining the stuff I learned about sprites and groups all together.
+### 10/27/25:
 
 
 
