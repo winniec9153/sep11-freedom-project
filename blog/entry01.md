@@ -2,10 +2,13 @@
 ##### 11/3/25
 
 #### Content: 
-The tool I decided on using is P5play, which is a Javascript game enigine that use p5.js to make interactive games and animations. So far I been learning about p5play through the [learning section](https://p5play.org/learn/) which is super helpful for beginners including me who is new to this tool. I been learning about the basic properties ofsprites and the Soft and Dynamic Inheritance of groups through this interactive text books. I been keeping track of my learning through my learning.log and tinkering on the 
+The tool I decided to use is [p5play](https://p5play.org/), a JavaScript game engine built on p5.js that allows users to create interactive games and animations. I’ve been learning through the  [p5play learning section](https://p5play.org/learn/), which has been very beginner-friendly. So far, I’ve explored the basic properties of sprites, such as adjusting their position, size, color, and rotation, as well as how to create and manage groups using Soft and Dynamic Inheritance. These groups let multiple sprites share traits and move together, which I found really interesting. I’ve been recording my progress in my learning log and experimenting with combining what I’ve learned to prepare for creating my own interactive project which is a budgeting game.
 
 ### Engineering Design Process: 
-Currently, I am in the first stage of the Engineering Design Process, where I’m identifying and defining specific issues that my project could address. My plan for the future is to design a fun, interactive game that helps people of all ages learn how to budget in an engaging and enjoyable way.
+Currently, I am in the first stage of the Engineering Design Process, where I am identifying specific issues in the world today. Something I noticed was that many people struggle with budgeting as they often spend way too much money on unnecessary things and leaving little room for essentials. My goal is to design a fun and interactive game that helps people of all ages learn how to budget in an engaging and enjoyable, which can be used in their daily life. 
+
+### Skills:
+Some skills I gained along the way include basic coding in JavaScript, as I learned how to write and edit code to create interactive elements using JS. I also developed an understanding of sprites as I learned how to control their position, size, color, rotation, and shape. In addition, I gained experience working with groups of sprites, which allowed me to apply shared properties and move multiple objects at once which is really cool. Through this process, I also improved my problem-solving skills, as I learned how to identify and fix coding errors while experimenting with new features, enhance my thinking skills too.
 
 [Next](entry02.md)
 
