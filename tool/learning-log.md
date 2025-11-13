@@ -30,7 +30,7 @@ function setup() {
 function update() {
 	clear();
 }
-``` 
+```
 * I also tried the challenge on converting the green box into a blue circle with a diameter of 30. At first I did it wrong as i did `sprite.color= 'blue';` and `sprite.diameter= 30;`. I forgot to change the `sprite` to `ball` which cause a little error. So once I changed it, the ball appeared. Next time I will try on making more shaped and maybe try making a character with these shapes.
 ``` JS
 let ball;
@@ -47,34 +47,52 @@ function update() {
 ```
 
 ### 10/27/25:
-* [P5play-group](https://p5play.org/learn/group?page=0) to learn about Groups(Soft and Dynamic Inheritance)   
+* [P5play-group](https://p5play.org/learn/group?page=0) to learn about Groups(Soft and Dynamic Inheritance)
 * A collection of and a blueprint for sprites with similar traits and behaviors.
-   * Examples: the dots in Pac Man  
-* You can check how many sprite is in a group through `group.length`.  
- * You can access sprite in groups through indexs, as indexs are arrays  
-	 * In an array it start with 0, not 1.   
+   * Examples: the dots in Pac Man
+* You can check how many sprite is in a group through `group.length`.
+ * You can access sprite in groups through indexs, as indexs are arrays
+	 * In an array it start with 0, not 1.
      * 	Example:
      * 	``` JS
-        dots[5].color = 'green';   
+        dots[5].color = 'green';
         ```
-        this shows:   
-       	<img width="720" height="66" alt="image" src="https://github.com/user-attachments/assets/33389ff4-8329-409a-a5a2-375423d63f06" />  
-* You can change all the sprite property in a group:    
-   ``` js 
+        this shows:
+       	<img width="720" height="66" alt="image" src="https://github.com/user-attachments/assets/33389ff4-8329-409a-a5a2-375423d63f06" />
+* You can change all the sprite property in a group:
+   ``` js
    dots.color = 'green';
-   ```    
+   ```
 	* this makes all the dots green.
-* You can also move all the sprites all at once through the `moveToward` funtion which is really cool(movement funtion).  
-	* Example of that code:     
+* You can also move all the sprites all at once through the `moveToward` funtion which is really cool(movement funtion).
+	* Example of that code:
    ``` JS
    dots.moveTowards(mouse);
    ```
    * This makes all the dots move where my arrow goes.
 * Something I will try next is combining the stuff I learned about sprites and groups all together.
 
+### 11/10/25:
+* [P5play-group](https://p5play.org/learn/group?page=1) to learn about Arrow setters
+* Arrow Function Property Setters
+    * it assigns a group proerty to an arrow so that means eachtime a new sprite is created in the group. Forexample instead of putting in a specific value each time( group.x=100), you can create alot and randomize the values.
+    * `group.x = () => random(width)`
+    * This Property `group.amount` can control how much sprite you want in a group.
+      * Forexample if I put `gem.amount=1000` then there will be 1000 gem/sprite being genreated.
+      * SO if we put everything together you would get this:
+    ``` JS
+    let gems = new Group();
+    gems.amount = 1000;
+    gems.x = () => random(width);
+    gems.y = () => random(height);
+    ```
+      * This will have 1000 sprites/gems in all different locations on the canvas
+* Indexed arrow function setters
+  * 
 
 
-<!-- 
+
+<!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
 * Challenges, a-ha moments, etc
