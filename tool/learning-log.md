@@ -88,9 +88,30 @@ function update() {
     ```
       * This will have 1000 sprites/gems in all different locations on the canvas
 * Indexed arrow function setters
-  * 
+  * you an use an arrow function to set a property for every sprite in a group, and the index `i` lets you customize each sprite individually.
+  * An example of me trying this:
+``` JS
+  let balls;
 
+function setup() {
+  createCanvas(400, 200);
+  balls = new Group();
 
+  for (let i = 0; i < 5; i++) {
+    let ball = createSprite(0, 100, 30, 30);
+    balls.add(ball);
+  }
+  balls.forEach((sprite, i) => sprite.position.x = 50 + i * 60);
+}
+function draw() {
+  background(220);
+  drawSprites();
+}
+```
+  * So 5 balls will appear in a row, and each ball is the same vertical position (y=100). So `for (let i = 0; i < 5; i++) { ... }` loops 5 time to create 5 sprite balls.
+* Relazing group.amount can gernate lots of sprites was a big A-Ha momment for me.
+* Question I still have is are there any limit for my much sprite I can use?
+* Next thing I will try is to try conbine group.amount with indexed arrow setter.
 
 <!--
 * Links you used today (websites, videos, etc)
