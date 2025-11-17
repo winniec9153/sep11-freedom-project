@@ -113,6 +113,9 @@ function draw() {
 * Question I still have is are there any limit for my much sprite I can use?
 * Next thing I will try is to try conbine group.amount with indexed arrow setter.
 
+### 11/17/25:
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
