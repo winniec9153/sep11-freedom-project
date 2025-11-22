@@ -114,6 +114,50 @@ function draw() {
 * Next thing I will try is to try conbine group.amount with indexed arrow setter.
 
 ### 11/17/25:
+* Collisions and Overlaps on [P5play-group](https://p5play.org/learn/group?page=2)
+  * Collisions and overlaps let you detect when sprites touch each other. You can check collisions between two sprites, a sprite and a group, or two groups.
+ * Some functions you can use are:
+ 	* collides, colliding, collided
+ 	* overlaps, overlapping, overlapped
+* Instead of just using these in if statements, you can give them a callback function. The callback runs automatically when the collision or overlap happens and gives you the two sprites that touched.
+	* For example, if a player sprite overlaps a gem in a group, the callback function can collect or delete the gem.
+ * I tried tinkering with the code through experimenting with random colors for gems, tweaking the movement speed for the player and added rotation before deleting gems just to see the effect.
+ * Code of it :
+```JS
+let player, gems;
+function setup() {
+  new Canvas(160, 456);
+
+  // This create a group of gems with random properties
+  gems = new Group();
+  gems.diameter = 10;
+  gems.x = () => random(0, canvas.w);
+  gems.y = () => random(0, canvas.h);
+  gems.color = () => color(random(255), random(255), random(255)); // random gem colors
+  gems.amount = 80;
+
+  player = new Sprite();
+  player.color = "orange";
+  player.diameter = 20;
+
+  // Collect gems when player overlaps
+  player.overlaps(gems, collect);
+}
+
+function collect(player, gem) {
+  gem.rotation = random(360); // a rotation before deleting
+  gem.delete();
+}
+
+function update() {
+  clear();
+  player.moveTowards(mouse, 5); // this added speed value to tinker with movement
+}
+```
+* My a-ha moment was learning that I could use arrow functions to randomize properties like` x`,` y`, and color for all sprites in a group.
+* I’m curious if there is a limit to how many sprites I can generate at once without crashing the game.
+* Next time I will try combining groups, arrow function setters, and collision effects.
+
 
 
 <!--
