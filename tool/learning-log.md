@@ -159,6 +159,65 @@ function update() {
 * Next time I will try combining groups, arrow function setters, and collision effects.
 
 
+### 12/4/25:
+* Sprites with an Image on [P5play-sprite](https://p5play.org/learn/sprite?page=2)
+* 1. Using Images on Sprites
+	* A sprite can have an image by setting sprite.image (or sprite.img).
+ 	* You can set it to:
+  		* a Q5.Image object, OR
+    	* a URL/file path to an image (like "assets/player.png").
+     * Loading Images BEFORE the Program Starts
+* 2. If your game needs images ready before setup runs, use:
+     ``` JS
+     function preload() {
+     	myImage = loadImage("path/to/image.png");
+     } 
+```
+* This is so your game doesn’t try to draw a sprite before the image is loaded (prevents errors or blank images).
+* 3.Offsetting the Sprite Image
+	* You can shift the image relative to the sprite’s center using:
+``` JS
+sprite.image.offset.x
+sprite.image.offset.y
+```
+* Why use offset???
+	* Because it helps align the picture with the sprite’s physics collider (the “hitbox”).
+ 	* Useful if the image's visual center doesn’t match the sprite’s physics center.
+Example of this all being used:
+``` JS
+let monster;
+
+function setup() {
+	new Canvas(500, 120);
+	monster = new Sprite();
+	monster.diameter = 70;
+	monster.image = 'assets/monster.webp';
+	monster.image.offset.y = 6;
+}
+function update() {
+	clear();
+	monster.debug = mouse.pressing();
+}
+``` this creates a monster image.
+* I created a code with a different image:
+``` JS
+let cat;
+
+function setup() {
+  new Canvas(500, 120);
+
+  cat = new Sprite();
+  cat.diameter = 70;
+  cat.image = 'assets/cat.webp';
+  cat.image.offset.y = 6;
+}
+
+function update() {
+  clear();
+  cat.debug = mouse.pressing();
+}
+```
+So by me doing this, it creates a cat image. 
 
 <!--
 * Links you used today (websites, videos, etc)
