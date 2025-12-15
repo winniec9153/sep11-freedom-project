@@ -222,7 +222,7 @@ So by me doing this, it creates a cat image.
 
 ### 12/15/25:
 
-* Sprites with an Image on [P5play-sprite](https://p5play.org/learn/sprite?page=2)
+* Custom color on [P5play-sprite](https://p5play.org/learn/sprite?page=2)
 * You can make pixel art with **custom colors** by creating a color palette.
 * Pass the color palette as the third parameter to the spriteArt() function.
 * **Color palettes** in p5play use JavaScript Object literal format (similar to a dictionary).
