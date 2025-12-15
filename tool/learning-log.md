@@ -219,6 +219,23 @@ function update() {
 ```
 So by me doing this, it creates a cat image. 
 
+
+### 12/15/25:
+
+* Sprites with an Image on [P5play-sprite](https://p5play.org/learn/sprite?page=2)
+* 1. Using Images on Sprites
+	* A sprite can have an image by setting sprite.image (or sprite.img).
+ 	* You can set it to:
+  		* a Q5.Image object, OR
+    	* a URL/file path to an image (like "assets/player.png").
+     * Loading Images BEFORE the Program Starts
+* 2. If your game needs images ready before setup runs, use:
+     ``` JS
+     function preload() {
+     	myImage = loadImage("path/to/image.png");
+     }
+
+     
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
