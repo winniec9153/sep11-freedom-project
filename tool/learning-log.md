@@ -223,17 +223,21 @@ So by me doing this, it creates a cat image.
 ### 12/15/25:
 
 * Sprites with an Image on [P5play-sprite](https://p5play.org/learn/sprite?page=2)
-* 1. Using Images on Sprites
-	* A sprite can have an image by setting sprite.image (or sprite.img).
- 	* You can set it to:
-  		* a Q5.Image object, OR
-    	* a URL/file path to an image (like "assets/player.png").
-     * Loading Images BEFORE the Program Starts
-* 2. If your game needs images ready before setup runs, use:
-     ``` JS
-     function preload() {
-     	myImage = loadImage("path/to/image.png");
-     }
+* You can make pixel art with **custom colors** by creating a color palette.
+* Pass the color palette as the third parameter to the spriteArt() function.
+* **Color palettes** in p5play use JavaScript Object literal format (similar to a dictionary).
+* Each letter in your pixel art corresponds to a color in the palette.
+* To define a color, use the color() function in p5, which accepts:
+	* RGB values `(r, g, b)`
+	* HEX codes `#RRGGBB`
+* A Tip: Use a color picker to easily select colors for your palette.
+``` JS
+let palette = {
+    u: color(255, 0, 0),
+    b: '#303060'         
+```
+* So this made the smiley face bright red. :)
+<img width="749" height="758" alt="image" src="https://github.com/user-attachments/assets/9de99ae8-eb19-47ec-8408-e1d34dbf7206" />
 
      
 <!--
