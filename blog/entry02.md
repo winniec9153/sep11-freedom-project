@@ -56,7 +56,7 @@ So overall, all these learning experiences will help me create a foundation for 
 
 ---
 ### Plans Over Break
-My Freedom Project goal/plan for the winter break is to watch additional videos on youtube as well as tinkering with my tool on Jsbin. I plan on doing some more research on `Subgroups` and keep track of my learning in my learning log.
+My Freedom Project goal/plan for the winter break is to watch additional videos on youtube as well as tinkering with my tool on Jsbin. I plan on learning more advance feautures of P5play and apply them to my budgeting game. So I want to learn more about animation and effect like adding particle effects such as sparks and smooth transitions. I will watch youtube video of this and make sure to keep track of what I learn in my learning log.
 
 ---
 
