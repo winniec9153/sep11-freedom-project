@@ -52,14 +52,25 @@ function update() {
   cat.debug = mouse.pressing();
 }
 ``` 
-So overall, all these learning experiences will help me create a foundation for my budgeting games. Knowing how to add background colors, images, and interactive spirtes  will make it look more appealing and engaging to the users.
+So overall, all these learning experiences will help me create a foundation for my budgeting games. Knowing how to add background colors, images, and interactive spirtes  will make it look more appealing and engaging to the users. 
+
+My Freedom Project goal/plan for the winter break is to watch additional videos on youtube as well as tinkering with my tool on Jsbin. I plan on doing some more research on Subgroups and keep track of my learning in my learning log.
 
 
 ### Engineering Design Process: 
 I am currently on the *second step* of the engineering design process, where I __research the problem__. So in my first blog, I noticed that many people struggle with budgeting as they often spend way too much money on unnecessary things and leaving little room for essentials. I researched someways that I can be able to help with this. So what I came up with was creating this budgeting game using my tool, which is p5play, and creating this interactive website/game that provides a space where you can make good financial decisions. Turning budgeting into a game allows users to learn how to manage money while finding it enjoyable and engaging.
 
 ### Skills:
-Some skills I developed were **consideration** and **problem decomposition**. When researching about problems people may struggle with when budgetting, it had made me think about different perspectives, such as in my day-to-day life, thinking about how it would impact other people, as well as in my game, on how the user would benefit from this budgeting game. Having consideration is very useful as it encourages me to be more thoughtful and open-minded, making me aware of how my decisions may impact others at school and in my personal life. The skill Problem decomposition has helped me break down a big task into smaller tasks that are easier to complete. This is important because it helps in many areas, such as schoolwork, where I do it step by step instead of all at once. By this I stay more organized and manage my time better and more effectively with less stress.  
+---
+#### Consideration
+
+When researching about problems people may struggle with when budgetting, it had made me think about different perspectives, such as in my day-to-day life, thinking about how it would impact other people, as well as in my game, on how the user would benefit from this budgeting game. Having consideration is very useful as it encourages me to be more thoughtful and open-minded, making me aware of how my decisions may impact others as well as my self at school and in my personal life. An example of consideration in my life is when I 
+share my notes with a classmate who was absent because I am thinking about how missing class could affect them and I want to help them stay on track instead of falling behind. I understand how being absent may make you fall behind and with the help of classmate notes, it will be able to help me catch up faster.
+
+---
+#### Problem Decomposition
+The skill of problem decomposition has helped me break down a big task into smaller tasks that are easier to complete. This is important because it helps in many areas, such as schoolwork, where I do it step by step instead of all at once. It helps me stay organized, reduces stress by not doing everything at once, makes it easier to track all my progress, and is very useful for school, projects (Freedom Project), and personal tasks. For example, I have a midterm exam for chemistry coming up, and I am breaking up everything I learned into different sections to make studying more efficient.
+
 [Previous](entry01.md) | [Next](entry03.md)
 
 [Home](../README.md)
