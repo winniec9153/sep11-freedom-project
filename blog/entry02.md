@@ -23,13 +23,18 @@ function setup() {
 ```  
 So all the circles get random positions and are the color white and through index setter one of the circle will become yellow and bigger while the rest stays the same.
 
-In addition I learned about [collisions and overlap](https://p5play.org/learn/group?page=2). So you can detect when sprites touch each other 
+In addition I learned about [collisions and overlap](https://p5play.org/learn/group?page=2) in P5play. So you can detect when sprites touch each other whether it is between two individual sprites, a sprite and a group, or two groups. I also learned how callback functions can be used to trigger actions, such as collecting or deleting an object.
+So when I was tinkering `player.overlaps(stars, catchStar);` this line is what check for overlap as the `player` is the sprite doing the checking, the `stars` is the group being checked, and the `overlap()` is what detect when sprite touch. 
+```JS
+function catchStar(player, star) {
+  star.y = random(-50, 0);
+  star.x = random(canvas.w);
+}
+```
+So this function is the **callback** and it runs when an overlap happens. 
 
 
-I also learned about [collisions and overlap](https://p5play.org/learn/group?page=2) and how you can detect when sprites touch each other. So bascialy you can check collisions between two sprites, a sprite and a group, or two groups. Callback functions allows it to trigger actions like collecting or deleting an object.
-
-
-I also learned how to add images and sprite images pretty recently through this document on [Sprites with an Image](https://p5play.org/learn/sprite?page=2) from P5Play. So a sprite can have an image by setting sprite.image (or sprite.img). You can set it to: a Q5.Image object, or a URL/file path to an image (like "assets/player.png"). I tinkered with this on [Jsbin](https://jsbin.com/?html,output) creating a cat image:
+I also learned how to add images and sprite images pretty recently through this document on [Sprites with an Image](https://p5play.org/learn/sprite?page=2) from P5Play. So a sprite can have an image by setting sprite.image (or sprite.img). You can set it to: a **Q5.Image object**, or a ((URL/file path** to an image (like "assets/player.png"). I tinkered with this on [Jsbin](https://jsbin.com/?html,output) creating a cat image:
 ``` JS
 let cat;
 
@@ -47,7 +52,7 @@ function update() {
   cat.debug = mouse.pressing();
 }
 ``` 
-So overall, all these learning experiences will help me create a foundation for my budgeting games, such as the background colors and images being added to make it look more appealing.
+So overall, all these learning experiences will help me create a foundation for my budgeting games. Knowing how to add background colors, images, and interactive spirtes  will make it look more appealing and engaging to the users.
 
 
 ### Engineering Design Process: 
