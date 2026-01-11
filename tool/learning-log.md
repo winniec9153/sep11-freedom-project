@@ -239,6 +239,58 @@ let palette = {
 * So this made the smiley face bright red. :)
 <img width="749" height="758" alt="image" src="https://github.com/user-attachments/assets/9de99ae8-eb19-47ec-8408-e1d34dbf7206" />
 
+
+### 1/11/26:
+
+* Sprite Physics on [P5play-sprite](https://p5play.org/learn/sprite?page=1)
+* What I Learned: I learned that sprites can have different physics types that control how they behave in a physics simulation. By changing a sprite’s physics setting, I can decide whether it is affected by gravity, whether it moves, or whether it can be pushed by other sprites. I also learned that sprites automatically have colliders, which let them detect and respond to collisions.
+* Key Physics Types:
+	* DYNAMIC (DYN) The default physics type.
+ 		* Affected by gravity
+   		* Can move and fall
+     	* Can collide with other sprites
+ 	* STATIC (STA)
+  		* Does not move
+    	* Not affected by gravity
+    	* Used for platforms, floors, and walls
+    * KINEMATIC (KIN)
+    	* Can move if programmed
+     	* Not affected by gravity
+      	* Not pushed by other sprites
+* Example of it being used:
+  ``` JS
+ let box, floor;
+
+function setup() {
+  new Canvas(238, 200);
+  world.gravity.y = 10;
+
+  // Kinematic sprite
+  box = new Sprite();
+  box.w = 40;
+  box.h = 40;
+  box.y = 100;
+  box.physics = KINEMATIC;
+  box.vel.x = 2; // movement happens here
+
+  // Static floor
+  floor = new Sprite();
+  floor.y = 190;
+  floor.w = 238;
+  floor.h = 5;
+  floor.physics = STATIC;
+}
+
+function update() {
+  clear();
+}
+```
+What this code does: 
+* so the box slides to the right
+* It does not fall, even though gravity is on
+* The floor stays still
+*  shows kinematic vs static behavior
+
      
 <!--
 * Links you used today (websites, videos, etc)
