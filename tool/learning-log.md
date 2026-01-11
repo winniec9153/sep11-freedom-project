@@ -258,9 +258,9 @@ let palette = {
      	* Not affected by gravity
       	* Not pushed by other sprites
 * Example of it being used:
-  ``` JS
- let box, floor;
 
+``` JS
+ let box, floor;
 function setup() {
   new Canvas(238, 200);
   world.gravity.y = 10;
