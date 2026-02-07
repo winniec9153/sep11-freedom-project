@@ -47,6 +47,14 @@ function setup() {
 ```
 So what i want to learn next is mostly trying to focus on combining everyhing I have learned into a complete budgetting game. i want to test out everything over again to see how I will be able to use for what I want to include in my budgeting game. So what I had plan so far to include is adding game mechanics such as tracking money , impove interactivity trhough adding keyboard controls, and enhacinging visuals which I learned how to do already. So I will learn on how to add keyboard control and a way to track money using p5js.
 
+---
+### Engineering Desgin Process:
+Im currently on the 4th(Plan) step of the engineering design process as I already brainstom some possible features/ideas that I may possibly want to include in my budgetting game. Now I am considering what features I want to include in my game based on my brainstorming ideas. I am also considerig how these features I am going to put in ym game will work before I start creating it. So the features I plan to include in my budgetting game are money tracker, items including bills & coins, a way to add & subtract money when buying or saving money, a way to categroize spending, a visual way of seeing how much money they have, and a way to set how much money they plan to budget.
+
+---
+### Skills
+Two skills I had developed since the previous entry includes
+
 
 
 [Previous](entry02.md) | [Next](entry04.md)
