@@ -2,7 +2,7 @@
 ##### 02/02/26
 
 ## Content:
-I have been learning my tool by watching YouTube tutorials and going through the [document tutorials](https://p5play.org/learn/sprite?page=0). Over winter break, my goal was to learn more advanced features of p5play and use them in my budgeting game. I watched YouTube videos and experimented on Jsbin to practice adding animations and effects, like sparks and smooth movements. This helped me see how to make my sprites and interactions more interesting. After winter break, I started using what I learned by combining sprite groups, collisions, and images into one interactive sketch. This shows I am moving from just experimenting to slowly start building a real game prototype based on my freedom project idea. 
+I have been learning my tool by watching YouTube tutorials and going through the [document tutorials](https://p5play.org/learn/sprite?page=0) as well as [articles](https://creative-coding.decontextualize.com/making-games-with-p5-play/) to learn more about sprites. Over winter break, my goal was to learn more advanced features of p5play and use them in my budgeting game. I watched YouTube videos and experimented on Jsbin to practice adding animations and effects, like sparks and smooth movements. This helped me see how to make my sprites and interactions more interesting. After winter break, I started using what I learned by combining sprite groups, collisions, and images into one interactive sketch. This shows I am moving from just experimenting to slowly start building a real game prototype based on my freedom project idea. 
 
 For example, I used arrow function property setters and index setters to control a group of circles:
 ``` JS
@@ -22,7 +22,7 @@ function setup() {
   circle[0].diameter = 30;
 }
 ``` 
-So all the circles are white and are located in different positions, but one of the circles is bigger and yellow due to the index setters. Another thing i practices using this [article of sprite](https://p5play.org/docs/Sprite?utm_source=chatgpt.com) to learn, was overlaps and callback functions to make interactions:
+So all the circles are white and are located in different positions, but one of the circles is bigger and yellow due to the index setters. Another thing i practices was overlaps and callback functions to make interactions:
 Example code:
 ```Js
 player.overlaps(stars, catchStar);
@@ -53,7 +53,7 @@ Im currently on the 4th(Plan) step of the engineering design process as I alread
 
 ---
 ### Skills
-Two skills I had developed since the previous entry includes
+Two skills I had developed and got better at since the previous entry include problem decomposition and How to learn. So I got better at problem decomposition through me breaking my game down into smaller parts through my brainstorming and planning. I broke my game down into different sections. One section includes what features I want to include in the budgeting. So I'm breaking down what I have learned so this allows me to break the game down step by step. I developed How to learn, #loyo, through using multiple resources, like documentation, youtube tutorials, jsbin, and other useful websites that discuss my tool, that the documentation might not have. For example I learned more about sprite to create games though [this](https://creative-coding.decontextualize.com/making-games-with-p5-play/) and index setters from the p5play documentation, watched YouTube tutorials to see sprite collisions in action, and experimented on Jsbin to make a cat sprite with an image.
 
 
 
