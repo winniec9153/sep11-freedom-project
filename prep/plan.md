@@ -8,8 +8,14 @@
 ## Timeline
 
 #### MVP
-
-- [ ] Task (deadline: X)
+Plan:
+- create a layout of my game on canva (deadline: 2/14)
+  - [ ] When game start there will be a box where you insert the money
+  - [ ] an area to type how much money you want to save for each section
+  - [ ] 
+- [ ] create an area where you insert the amount of money you have
+  - [ ] use ...
+- [ ] 
   - [ ] Subtask (deadline: X)
 
 #### Beyond MVP
