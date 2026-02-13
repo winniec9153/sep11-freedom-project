@@ -1,7 +1,7 @@
 # Plan
 
 ## Tool: p5js
-## Product: Budgeting game
+## Product: Budgeting game/app
 
 ---
 
@@ -9,19 +9,25 @@
 
 #### MVP
 Plan:
-- create a layout of my game on canva (deadline: 2/14)
-  - [ ] When game start there will be a box where you insert the money
-  - [ ] an area to type how much money you want to save for each section
-  - [ ] Subtask (deadline: X)
-- [ ] create an area where you insert the amount of money you have
-  - [ ] use ...
-- [ ] Subtask (deadline: X)
+- [ ] Finish my Plan.md (deadline: 2/13)
+- [ ] Use cancva to design a visual layout/frame of the budgeting game interface (deadline: 2/14)
+  - Example: titlescreen, balance display log, budget trackers and buttons
+- [ ] Create HTML structure 
+- [ ] create an area where you insert the amount of money you have and make sure the game will save that number and becomes the player's current balance(deadline: 2/17)
+- [ ] Make sure that all expense will subtract from the current balance and income/ allowance will add to the balance.(deadline: 2/19)
+- [ ] Add a category budgeting section (deadline: 2/20)
+  - Example: Food, Gas, Entertainment, and others
+- [ ] Create a section that will display a clear daily spending log as well as a full monthly log of spending(deadline: 2/23)
+- [ ] Make a way to edit transaction incase they made a mistake (deadline: 2/29)
+- [ ] Alert popup when balance is below 25 (deadline: 3/1)
+- [ ] Add CSS so theres color and background
+- [ ] 
   - [ ] Subtask (deadline: X)
 
 #### Beyond MVP
 
-- [ ] Task
-  - [ ] Subtask
+- [ ] Hoping to make it responsive on all devices
+- [ ] Create a little basic game in side my budgeting game if I have time
 
 
 <!-- EXAMPLE
