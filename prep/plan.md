@@ -7,20 +7,26 @@
 
 ## Timeline
 
+## Fonts:
+- [Lora](https://fonts.google.com/selection/embed)
+
 #### MVP
 Plan:
 - [ ] Finish my Plan.md (deadline: 2/13)
-- [ ] Use cancva to design a visual layout/frame of the budgeting game interface (deadline: 2/14)
+- [ ] Use cancva to design a visual layout/frame of the budgeting game interface (deadline: 2/20)
   - Example: titlescreen, balance display log, budget trackers and buttons
-- [ ] Create HTML structure 
-- [ ] create an area where you insert the amount of money you have and make sure the game will save that number and becomes the player's current balance(deadline: 2/17)
-- [ ] Make sure that all expense will subtract from the current balance and income/ allowance will add to the balance.(deadline: 2/19)
-- [ ] Add a category budgeting section (deadline: 2/20)
+- [ ] Create HTML structure (deadline: 2/25)
+- [ ] create an area where you insert the amount of money you have and make sure the game will save that number and becomes the player's current balance(deadline: 3/1)
+- [ ] Make sure that all expense will subtract from the current balance(deadline: 3/5)
+- [ ] Create a way where income or allowance will add to the balance.(deadline: 3/09)
+- [ ] Add a category budgeting section (deadline: 3/14)
   - Example: Food, Gas, Entertainment, and others
-- [ ] Create a section that will display a clear daily spending log as well as a full monthly log of spending(deadline: 2/23)
-- [ ] Make a way to edit transaction incase they made a mistake (deadline: 2/29)
-- [ ] Alert popup when balance is below 25 (deadline: 3/1)
-- [ ] Add CSS so there's color and background
+- [ ] Create a section that will display a clear daily spending log (deadline: 3/18)
+- [ ] Create a secton that will display a full monthly log of spending(deadline: 3/21)
+- [ ] Make a way to edit transaction incase they made a mistake (deadline: 3/24)
+- [ ] Alert popup when balance is below $25 (deadline: 3/28)
+- [ ] Check if the game actually works by testing out all functions in the game (deadline: 3/30)
+- [ ] Add CSS so there's color and background (deadline: 4/3)
       
 
 #### Beyond MVP
