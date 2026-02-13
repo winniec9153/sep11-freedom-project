@@ -20,9 +20,8 @@ Plan:
 - [ ] Create a section that will display a clear daily spending log as well as a full monthly log of spending(deadline: 2/23)
 - [ ] Make a way to edit transaction incase they made a mistake (deadline: 2/29)
 - [ ] Alert popup when balance is below 25 (deadline: 3/1)
-- [ ] Add CSS so theres color and background
-- [ ] 
-  - [ ] Subtask (deadline: X)
+- [ ] Add CSS so there's color and background
+      
 
 #### Beyond MVP
 
