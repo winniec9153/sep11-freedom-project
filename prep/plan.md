@@ -10,6 +10,11 @@
 ## Fonts:
 - [Lora](https://fonts.google.com/selection/embed)
 
+### Layout:
+ <img width="200" height="450" alt="image" src="https://github.com/user-attachments/assets/fd5083ba-ceb7-400a-8ace-5d701f35646b" />
+
+
+
 #### MVP
 Plan:
 - [x] Finish my Plan.md (deadline: 2/13)
