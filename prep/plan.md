@@ -12,8 +12,8 @@
 
 #### MVP
 Plan:
-- [ ] Finish my Plan.md (deadline: 2/13)
-- [ ] Use canva to design a visual layout/frame of the budgeting game interface (deadline: 2/20)
+- [x] Finish my Plan.md (deadline: 2/13)
+- [x] Use canva to design a visual layout/frame of the budgeting game interface (deadline: 2/20)
   - Example: titlescreen, balance display log, budget trackers and buttons
 - [ ] Create HTML structure (deadline: 2/25)
 - [ ] create an area where you insert the amount of money you have and make sure the game will save that number and becomes the player's current balance(deadline: 3/1)
