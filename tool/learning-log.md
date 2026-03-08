@@ -291,6 +291,19 @@ What this code does:
 * The floor stays still
 *  shows kinematic vs static behavior
 
+### 3/8/2026
+* p5play documentation about the [World object and sleeping physics](https://p5play.org/learn/world?page=0).
+* Learned that every p5play project has its own world object that controls the physics simulation.
+* The world object includes gravity, which has x and y components that affect how sprites fall or move.
+* Learned that the physics simulation is deterministic, meaning the same code will always produce the same result unless random values are used.
+* Sleeping
+	* Explored how sleeping works in the physics engine.
+ 		* Sprites automatically go to sleep when they stop moving and stop colliding with new objects.
+	* Learned that sleeping improves performance because the physics engine doesn’t need to keep calculating movement for inactive sprites.
+ * An a-ha moment is realizing that a sprite might stop responding because it is sleeping, not because the code is broken.
+ * Something I will try next is experimenting with changing world.gravity.x and world.gravity.y to see how it affects sprite movement.
+
+
      
 <!--
 * Links you used today (websites, videos, etc)
