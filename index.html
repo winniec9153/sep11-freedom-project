@@ -43,6 +43,14 @@
         <!-- <script src="script.js"></script> -->
         <script>
             // JS
+            let balance = 0; //creates the balance variable, where player stores their money
+            document.querySelector("#startButton").addEventListener("click", function(){ // When the start button is clicked, it will run the code
+                var startValue= document.querySelector("#startingMoney").value;//if the player type 500, startValue =500
+                balance= Number(startValue); //this convert it into a number. So for example balance=500.
+                localStorage.setItem("balance", balance);// this will save the balance by sotring the balance in the browser so it wont disapear when the page refreshes.
+                document.querySelector("#balance").innerHTML=balance; //use to display to balance
+
+            })
 
 
 
