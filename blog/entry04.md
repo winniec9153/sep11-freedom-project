@@ -35,6 +35,7 @@ let balance = 0; //creates the balance variable, where player stores their money
 
 ```
 So this code takes the number the player enters and converts it into a number value, which will be saved to local storage and displayed on the screen.
+
 ---
 
 ### Engineering Desgin Process:
