@@ -113,8 +113,203 @@ function draw() {
 * Question I still have is are there any limit for my much sprite I can use?
 * Next thing I will try is to try conbine group.amount with indexed arrow setter.
 
+<<<<<<< HEAD
 
 
+=======
+### 11/17/25:
+* Collisions and Overlaps on [P5play-group](https://p5play.org/learn/group?page=2)
+  * Collisions and overlaps let you detect when sprites touch each other. You can check collisions between two sprites, a sprite and a group, or two groups.
+ * Some functions you can use are:
+ 	* collides, colliding, collided
+ 	* overlaps, overlapping, overlapped
+* Instead of just using these in if statements, you can give them a callback function. The callback runs automatically when the collision or overlap happens and gives you the two sprites that touched.
+	* For example, if a player sprite overlaps a gem in a group, the callback function can collect or delete the gem.
+ * I tried tinkering with the code through experimenting with random colors for gems, tweaking the movement speed for the player and added rotation before deleting gems just to see the effect.
+ * Code of it :
+```JS
+let player, gems;
+function setup() {
+  new Canvas(160, 456);
+
+  // This create a group of gems with random properties
+  gems = new Group();
+  gems.diameter = 10;
+  gems.x = () => random(0, canvas.w);
+  gems.y = () => random(0, canvas.h);
+  gems.color = () => color(random(255), random(255), random(255)); // random gem colors
+  gems.amount = 80;
+
+  player = new Sprite();
+  player.color = "orange";
+  player.diameter = 20;
+
+  // Collect gems when player overlaps
+  player.overlaps(gems, collect);
+}
+
+function collect(player, gem) {
+  gem.rotation = random(360); // a rotation before deleting
+  gem.delete();
+}
+
+function update() {
+  clear();
+  player.moveTowards(mouse, 5); // this added speed value to tinker with movement
+}
+```
+* My a-ha moment was learning that I could use arrow functions to randomize properties like` x`,` y`, and color for all sprites in a group.
+* I’m curious if there is a limit to how many sprites I can generate at once without crashing the game.
+* Next time I will try combining groups, arrow function setters, and collision effects.
+
+
+### 12/4/25:
+* Sprites with an Image on [P5play-sprite](https://p5play.org/learn/sprite?page=2)
+* 1. Using Images on Sprites
+	* A sprite can have an image by setting sprite.image (or sprite.img).
+ 	* You can set it to:
+  		* a Q5.Image object, OR
+    	* a URL/file path to an image (like "assets/player.png").
+     * Loading Images BEFORE the Program Starts
+* 2. If your game needs images ready before setup runs, use:
+     ``` JS
+     function preload() {
+     	myImage = loadImage("path/to/image.png");
+     } 
+```
+* This is so your game doesn’t try to draw a sprite before the image is loaded (prevents errors or blank images).
+* 3.Offsetting the Sprite Image
+	* You can shift the image relative to the sprite’s center using:
+``` JS
+sprite.image.offset.x
+sprite.image.offset.y
+```
+* Why use offset???
+	* Because it helps align the picture with the sprite’s physics collider (the “hitbox”).
+ 	* Useful if the image's visual center doesn’t match the sprite’s physics center.
+Example of this all being used:
+``` JS
+let monster;
+
+function setup() {
+	new Canvas(500, 120);
+	monster = new Sprite();
+	monster.diameter = 70;
+	monster.image = 'assets/monster.webp';
+	monster.image.offset.y = 6;
+}
+function update() {
+	clear();
+	monster.debug = mouse.pressing();
+}
+``` this creates a monster image.
+* I created a code with a different image:
+``` JS
+let cat;
+
+function setup() {
+  new Canvas(500, 120);
+
+  cat = new Sprite();
+  cat.diameter = 70;
+  cat.image = 'assets/cat.webp';
+  cat.image.offset.y = 6;
+}
+
+function update() {
+  clear();
+  cat.debug = mouse.pressing();
+}
+```
+So by me doing this, it creates a cat image. 
+
+
+### 12/15/25:
+
+* Custom color on [P5play-sprite](https://p5play.org/learn/sprite?page=2)
+* You can make pixel art with **custom colors** by creating a color palette.
+* Pass the color palette as the third parameter to the spriteArt() function.
+* **Color palettes** in p5play use JavaScript Object literal format (similar to a dictionary).
+* Each letter in your pixel art corresponds to a color in the palette.
+* To define a color, use the color() function in p5, which accepts:
+	* RGB values `(r, g, b)`
+	* HEX codes `#RRGGBB`
+* A Tip: Use a color picker to easily select colors for your palette.
+``` JS
+let palette = {
+    u: color(255, 0, 0),
+    b: '#303060'         
+```
+* So this made the smiley face bright red. :)
+<img width="749" height="758" alt="image" src="https://github.com/user-attachments/assets/9de99ae8-eb19-47ec-8408-e1d34dbf7206" />
+
+
+### 1/11/26:
+
+* Sprite Physics on [P5play-sprite](https://p5play.org/learn/sprite?page=1)
+* What I Learned: I learned that sprites can have different physics types that control how they behave in a physics simulation. By changing a sprite’s physics setting, I can decide whether it is affected by gravity, whether it moves, or whether it can be pushed by other sprites. I also learned that sprites automatically have colliders, which let them detect and respond to collisions.
+* Key Physics Types:
+	* DYNAMIC (DYN) The default physics type.
+ 		* Affected by gravity
+   		* Can move and fall
+     	* Can collide with other sprites
+ 	* STATIC (STA)
+  		* Does not move
+    	* Not affected by gravity
+    	* Used for platforms, floors, and walls
+    * KINEMATIC (KIN)
+    	* Can move if programmed
+     	* Not affected by gravity
+      	* Not pushed by other sprites
+* Example of it being used:
+
+``` JS
+ let box, floor;
+function setup() {
+  new Canvas(238, 200);
+  world.gravity.y = 10;
+
+  // Kinematic sprite
+  box = new Sprite();
+  box.w = 40;
+  box.h = 40;
+  box.y = 100;
+  box.physics = KINEMATIC;
+  box.vel.x = 2; // movement happens here
+
+  // Static floor
+  floor = new Sprite();
+  floor.y = 190;
+  floor.w = 238;
+  floor.h = 5;
+  floor.physics = STATIC;
+}
+
+function update() {
+  clear();
+}
+```
+What this code does: 
+* so the box slides to the right
+* It does not fall, even though gravity is on
+* The floor stays still
+*  shows kinematic vs static behavior
+
+### 3/8/2026
+* p5play documentation about the [World object and sleeping physics](https://p5play.org/learn/world?page=0).
+* Learned that every p5play project has its own world object that controls the physics simulation.
+* The world object includes gravity, which has x and y components that affect how sprites fall or move.
+* Learned that the physics simulation is deterministic, meaning the same code will always produce the same result unless random values are used.
+* Sleeping
+	* Explored how sleeping works in the physics engine.
+ 		* Sprites automatically go to sleep when they stop moving and stop colliding with new objects.
+	* Learned that sleeping improves performance because the physics engine doesn’t need to keep calculating movement for inactive sprites.
+ * An a-ha moment is realizing that a sprite might stop responding because it is sleeping, not because the code is broken.
+ * Something I will try next is experimenting with changing world.gravity.x and world.gravity.y to see how it affects sprite movement.
+
+
+     
+>>>>>>> 5ffe8667d0e07a0c90f1aea62aaaa9131fe53385
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
