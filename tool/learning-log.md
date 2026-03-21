@@ -307,9 +307,30 @@ What this code does:
  * An a-ha moment is realizing that a sprite might stop responding because it is sleeping, not because the code is broken.
  * Something I will try next is experimenting with changing world.gravity.x and world.gravity.y to see how it affects sprite movement.
 
+### 3/21/2026
+* p5play documentation about the [Sprites with an Image](https://p5play.org/learn/sprite?page=2).
+* Created a sprite called monster and set its diameter to 70.
+* Added an image to the sprite using a URL path 'assets/monster.webp'.
+* Used monster.image.offset.y = 6 to adjust the alignment of the image with the sprite’s physics collider.
+* Used monster.debug = mouse.pressing(); to toggle the visibility of the sprite’s physics body when clicking the canvas.
+``` JS
+let monster;
 
-     
->>>>>>> 5ffe8667d0e07a0c90f1aea62aaaa9131fe53385
+function setup() {
+	new Canvas(500, 120);
+
+	monster = new Sprite();
+	monster.diameter = 70;
+	monster.image = 'assets/monster.webp';
+	monster.image.offset.y = 6;
+}
+
+function update() {
+	clear();
+	monster.debug = mouse.pressing();
+}
+```
+* An A-ha moment I had was: Using sprite.image.offset lets you adjust the image relative to the sprite’s center, which fixes alignment issues.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
