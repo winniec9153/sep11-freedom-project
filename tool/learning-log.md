@@ -332,15 +332,33 @@ function update() {
 ```
 * An A-ha moment I had was: Using sprite.image.offset lets you adjust the image relative to the sprite’s center, which fixes alignment issues.
 
-3/23/26
-* SO i learend about opacity and sprite.image.scale from Sprite with Image on p5plau
+3/24/26
+* So i learend about opacity and sprite.image.scale from [Sprite with Image on p5play](https://p5play.org/learn/sprite?page=2)
 	* opacity
  		* it changes the transparency of the sprite with a scale of 0-1, with 0 being complety trasparent while 1 being completly opaque.
    * sprite.image.scale
-   		* I can change the size of the sprite, with default being 1.0. 
-  	 	
+   		* I can change the size of the sprite, with default being 1.0.
+     * Example:
+``` JS
+     let star;
 
-youcan create spirte with image through an url path. Used sprite.image.offset.y = 6 to adjust the alignment of the image with the sprite’s physics collider.
+function setup() {
+	new Canvas(500, 120);
+
+	star = new Sprite();
+	star.image = 'assets/star.webp';
+}
+
+function update() {
+	clear();
+	let v = cos(frameCount * 2) * 0.5 + 0.5;
+	star.opacity = v;
+	star.image.scale = v;
+}
+```
+ * I realized that opacity and image scale can be controlled using the same variable, so the sprite can smoothly fade in and change size at the same time using math functions like cosine 	 	
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
