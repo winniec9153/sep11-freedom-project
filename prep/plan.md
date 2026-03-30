@@ -28,16 +28,16 @@ Plan:
   - Example: Food, Gas, Entertainment, and others
 - [ ] Create a section that will display a clear daily spending log (deadline: 3/18)
 - [ ] Create a secton that will display a full monthly log of spending(deadline: 3/21)
-- [ ] Make a way to edit transaction incase they made a mistake (deadline: 3/24)
-- [ ] Alert popup when balance is below $25 (deadline: 3/28)
-- [ ] Check if the game actually works by testing out all functions in the game (deadline: 3/30)
-- [ ] Add CSS so there's color and background (deadline: 4/3)
-      
+
+
 
 #### Beyond MVP
-
+- [ ] Alert popup when balance is below $25
+- [ ] Add CSS so there's color and background
 - [ ] Hoping to make it responsive on all devices
 - [ ] Create a little basic game in side my budgeting game if I have time
+- [ ] Make a way to edit transaction incase they made a mistake
+- [ ] Check if the game actually works by testing out all functions in the game
 
 
 <!-- EXAMPLE
@@ -71,7 +71,7 @@ Plan:
 
 <!-- DO NOT USE THIS YET
 
-#### Peer Feedback 
+#### Peer Feedback
 
 | Name | Glows | Grows |
 | -------- | ------- | ------- |
