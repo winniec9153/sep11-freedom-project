@@ -307,9 +307,58 @@ What this code does:
  * An a-ha moment is realizing that a sprite might stop responding because it is sleeping, not because the code is broken.
  * Something I will try next is experimenting with changing world.gravity.x and world.gravity.y to see how it affects sprite movement.
 
+### 3/21/2026
+* p5play documentation about the [Sprites with an Image](https://p5play.org/learn/sprite?page=2).
+* Created a sprite called monster and set its diameter to 70.
+* Added an image to the sprite using a URL path 'assets/monster.webp'.
+* Used monster.image.offset.y = 6 to adjust the alignment of the image with the sprite’s physics collider.
+* Used monster.debug = mouse.pressing(); to toggle the visibility of the sprite’s physics body when clicking the canvas.
+``` JS
+let monster;
 
-     
->>>>>>> 5ffe8667d0e07a0c90f1aea62aaaa9131fe53385
+function setup() {
+	new Canvas(500, 120);
+
+	monster = new Sprite();
+	monster.diameter = 70;
+	monster.image = 'assets/monster.webp';
+	monster.image.offset.y = 6;
+}
+
+function update() {
+	clear();
+	monster.debug = mouse.pressing();
+}
+```
+* An A-ha moment I had was: Using sprite.image.offset lets you adjust the image relative to the sprite’s center, which fixes alignment issues.
+
+3/24/26
+* So i learend about opacity and sprite.image.scale from [Sprite with Image on p5play](https://p5play.org/learn/sprite?page=2)
+	* opacity
+ 		* it changes the transparency of the sprite with a scale of 0-1, with 0 being complety trasparent while 1 being completly opaque.
+   * sprite.image.scale
+   		* I can change the size of the sprite, with default being 1.0.
+     * Example:
+``` JS
+     let star;
+
+function setup() {
+	new Canvas(500, 120);
+
+	star = new Sprite();
+	star.image = 'assets/star.webp';
+}
+
+function update() {
+	clear();
+	let v = cos(frameCount * 2) * 0.5 + 0.5;
+	star.opacity = v;
+	star.image.scale = v;
+}
+```
+ * I realized that opacity and image scale can be controlled using the same variable, so the sprite can smoothly fade in and change size at the same time using math functions like cosine 	 	
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
