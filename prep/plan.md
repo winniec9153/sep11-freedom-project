@@ -39,6 +39,7 @@ Plan:
 - [ ] Make a way to edit transaction incase they made a mistake
 - [ ] Check if the game actually works by testing out all functions in the game
 - [ ] Create a secton that will display a full monthly log of spending
+- [ ] add a money image sprite
 
 
 <!-- EXAMPLE
