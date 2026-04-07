@@ -51,6 +51,20 @@
                 document.querySelector("#balance").innerHTML=balance; //use to display to balance
 
             })
+              document.querySelector("#addButton").addEventListener("click", function(){
+
+                var amount = Number(document.querySelector("#amountInput").value);
+                var type = document.querySelector("#typeInput").value;
+
+                if(type == "expense"){
+                    balance -= amount;   // subtract amounts
+                } else {
+                    balance += amount;   // add amounts
+                }
+                localStorage.setItem("balance", balance);
+                document.querySelector("#balance").innerHTML = balance;
+
+            });
 
 
 
