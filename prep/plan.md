@@ -26,8 +26,8 @@ Plan:
 - [x] Create a way where income or allowance will add to the balance.(deadline: 3/09)
 - [x] Add a category budgeting section (deadline: 3/14)
   - Example: Food, Gas, Entertainment, and others
-- [ ] Create a section that will display a clear daily spending log (deadline: 3/18)
-- [ ] Create a secton that will display a full monthly log of spending(deadline: 3/21)
+- [x] Create a section that will display a clear daily spending log (deadline: 3/18)
+
 
 
 
@@ -38,6 +38,7 @@ Plan:
 - [ ] Create a little basic game in side my budgeting game if I have time
 - [ ] Make a way to edit transaction incase they made a mistake
 - [ ] Check if the game actually works by testing out all functions in the game
+- [ ] Create a secton that will display a full monthly log of spending
 
 
 <!-- EXAMPLE
