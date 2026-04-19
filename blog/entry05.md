@@ -2,7 +2,7 @@
 ##### 4/13/2026
 
 ## Content:
-I have been learning my tools through reading through the documents on P5Play and experimenting with what I learned through p5js coding thing where I get to tinker around with it to see what works well. I finished my MVP through breaking it down into multiple steps. So instead of doing everything at once, I broke it down little by little. So this was my plan which I followed:
+I have been learning my tools through reading through the documents on P5Play and experimenting with what I learned through p5js coding thing where I get to tinker around with it to see what works well. I finished my [MVP](https://winniec9153.github.io/sep11-freedom-project/) through breaking it down into multiple steps. So instead of doing everything at once, I broke it down little by little. So this was my plan which I followed:
 ``` JS
  Finish my Plan.md (deadline: 2/13)
  Use canva to design a visual layout/frame of the budgeting game interface (deadline: 2/20)
@@ -15,7 +15,9 @@ Example: titlescreen, balance display log, budget trackers and buttons
 Example: Food, Gas, Entertainment, and others
  Create a section that will display a clear daily spending log (deadline: 3/18)
  ```
- I end up completing all these steps on time which I am glad about. 
+ I end up completing all these steps on time which I am glad about. Through following my plan this is what I ended up with:
+ <img width="822" height="572" alt="image" src="https://github.com/user-attachments/assets/7ed70a28-76ee-49fe-a1cb-f0a217a9aacd" />
+
 
 ### Engineering Desgin Process:
 
