@@ -32,9 +32,9 @@ Plan:
 
 
 #### Beyond MVP
-- [x ] Alert popup when balance is below $25
-- [x ] Add CSS so there's color and background
-- [ ] Hoping to make it responsive on all devices
+- [x] Alert popup when balance is below $25
+- [x] Add CSS so there's color and background
+- [x ] Hoping to make it responsive on all devices
 - [ ] Create a little basic game in side my budgeting game if I have time
 - [ ] Make a way to edit transaction incase they made a mistake
 - [ ] Create a secton that will display a full monthly log of spending
