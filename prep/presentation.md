@@ -52,7 +52,7 @@
 ```
 
 ## Conclusion
-* I will say how overall Budgeting app are very beneficial and will help you fianncially so you dont over spend and realise how much money you are spednig. Then I will say a take away I had when making this Budgeting App.
+* I will say how overall Budgeting app are very beneficial and will help you fianncially so you dont over spend and realise how much money you are spednig. Then I will say a take away I had when making this Budgeting App. For example how I should had manage my time better when making this app as i started to feel rushed toward the end due t my procrastination.
 *  
 
 <!-- EXAMPLE
