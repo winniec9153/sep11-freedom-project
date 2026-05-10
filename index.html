@@ -42,6 +42,12 @@
             position: relative;
             z-index: 1;
         }
+
+        /* Hide the p5play thing that appears*/
+        body > div[style*="z-index: 1000"],
+        body > div[style*="z-index: 1001"] {
+            display: none !important;
+        }
     </style>
 
     <title>Budget App</title>
@@ -85,15 +91,14 @@
         <ul id="dailyLog"></ul>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="https://p5play.org/v3/planck.js"></script>
+    <script src="https://p5play.org/v3/p5.play.js"></script>
 
     <script>
-        // JS
+        var appBalance = 0; //creates the balance variable, where player stores their money
 
-        var balance = 0; //creates the balance variable, where player stores their money
-
-        var categories = {
+        var appCategories = {
             Food: 0,
             Gas: 0,
             Entertainment: 0,
@@ -105,10 +110,10 @@
             var list = document.querySelector("#categoryTotals");
             list.innerHTML = ""; //This clears the list first so it doesn't stack duplicates
 
-            for (var cat in categories) { //Go through every key (Food, Gas, Entertainment, Other) inside the categories object one by one.
+            for (var cat in appCategories) { //Go through every key (Food, Gas, Entertainment, Other) inside the categories object one by one.
                 var li = document.createElement("li"); //Creates a new list item
-                li.innerHTML = cat + ": $" + categories[cat];
-                //Food: $50, cat = "Food" categories[cat] = 50
+                li.innerHTML = cat + ": $" + appCategories[cat];
+                //Food: $50, cat = "Food" appCategories[cat] = 50
                 list.appendChild(li);
             }
         }
@@ -128,98 +133,80 @@
         // start button
         document.querySelector("#startButton").addEventListener("click", function () { // When the start button is clicked, it will run the code
 
-            var startValue = document.querySelector("#startingMoney").value; //if the player type 500, startValue =500
+            var startValue = document.querySelector("#startingMoney").value; //if the player type 500, startValue = 500
 
-            balance = Number(startValue); //convert it into a number
+            appBalance = Number(startValue); //convert it into a number
 
-            localStorage.setItem("balance", balance); //save balance so it doesn't disappear on refresh
+            localStorage.setItem("appBalance", appBalance); //save balance so it doesn't disappear on refresh
 
-            document.querySelector("#balance").innerHTML = balance; //display balance
+            document.querySelector("#balance").innerHTML = appBalance; //display balance
         });
 
         document.querySelector("#addButton").addEventListener("click", function () {
 
-            var amount = Number(document.querySelector("#amountInput").value);
-            var type = document.querySelector("#typeInput").value;
-            var category = document.querySelector("#categoryInput").value;
+            var amount = Number(document.querySelector("#amountInput").value);//Get the number the user typed into the amount box and save it as amount
+            var type = document.querySelector("#typeInput").value;//Get whether the user selected ‘income’ or ‘expense’ and save it as type
+            var category = document.querySelector("#categoryInput").value;//Get the category the user picked and save it as category
 
             if (type == "expense") {
-                balance -= amount;   // subtract amounts
-                categories[category] += amount; //track spending
+                appBalance -= amount;   // subtract amounts
+                appCategories[category] += amount; //track spending
             } else {
-                balance += amount;   // add amounts
+                appBalance += amount;   // add amounts
             }
 
-            localStorage.setItem("balance", balance);
-            document.querySelector("#balance").innerHTML = balance;
+            localStorage.setItem("appBalance", appBalance);
+            document.querySelector("#balance").innerHTML = appBalance;
 
             updateCategories();
             addToLog(amount, type, category); //calling function with values
 
             // ALERT if balance is low
-            if (balance < 25) {
+            if (appBalance < 25) {
                 alert("WARNING: YOUR BALANCE IS BELOW $25!");
             }
         });
-
-        //USING p5.js/p5play – Floating $ Signs in the Background
-
-        new p5(function (p) {
-            var signs = [];
-            var SIGNS = 50; // how many $ signs float around in the background
-
-            p.setup = function () {
-                p.createCanvas(window.innerWidth, window.innerHeight);
-                p.textFont('Arial');
-
-                for (var i = 0; i < SIGNS; i++) {
-                    signs.push(createSign(p));
-                }
-            };
-
-            p.draw = function () {
-                p.clear(); // transparent background so lightblue body shows through
-
-                for (var i = 0; i < signs.length; i++) {
-                    var s = signs[i];
-
-                    // move upward with a gentle side wobble
-                    s.wobble += s.wobbleSpeed;
-                    s.x += s.speedX + Math.sin(s.wobble) * 0.5;
-                    s.y += s.speedY;
-
-                    // reset to bottom when it floats off the top
-                    if (s.y < -60) {
-                        signs[i] = createSign(p);
-                        signs[i].y = p.height + 20; // start from bottom
-                    }
-
-                    p.noStroke();
-                    p.fill(0, 100, 0, s.alpha); // dark green, semi-transparent because of s.alpha
-                    p.textSize(s.size);
-                    p.textAlign(p.CENTER, p.CENTER);
-                    p.text('$', s.x, s.y);// draws the $ character on the canvas at the sign's current x and y position. This is the line that makes it actually appear.
-                }
-            };
-
-            p.windowResized = function () {
-                p.resizeCanvas(window.innerWidth, window.innerHeight);
-            };
-
-
-            function createSign(p) {
-                return {
-                    x: p.random(p.width),
-                    y: p.random(p.height),
-                    size: p.random(16, 50),
-                    speedX: p.random(-0.5, 0.5),
-                    speedY: p.random(-1.0, -0.3),
-                    alpha: p.random(40, 120),
-                    wobble: p.random(0, p.TWO_PI),
-                    wobbleSpeed: p.random(0.01, 0.04)
-                };
-            }
-        });
     </script>
+
+    <script>
+        //P5play to display Floating $ Signs in the Background
+        // I used a separate script tag b/c p5play only works in global mode
+
+        let signs = [];
+
+        function setup() {
+            new Canvas(windowWidth, windowHeight);
+
+            for (let i = 0; i < 20; i++) {
+                let s = new Sprite();
+                s.x = random(width);
+                s.y = random(height);
+                s.image = '💵'; // emoji image for the $ sign
+                s.scale = random(0.5, 1.5);
+                s.vel.y = random(-1, -0.3);
+                s.vel.x = random(-0.5, 0.5);
+                s.collider = 'none'; // no physics collisions needed
+                signs.push(s);
+            }
+        }
+
+        function draw() {
+            clear(); // wipe canvas each frame so sprites don't leave trails
+
+            // Reset $ signs that float off the top of the screen
+            for (let s of signs) {
+                if (s.y < -50) {
+                    s.y = height + 20;
+                    s.x = random(width);
+                }
+            }
+            // p5play automatically draws all sprites AFTER draw() finishes
+        }
+
+        function windowResized() {
+            resizeCanvas(windowWidth, windowHeight);
+        }
+    </script>
+
 </body>
 </html>
