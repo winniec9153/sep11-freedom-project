@@ -8,9 +8,9 @@ For my project, I chose to independently study p5Play in order to help me make m
 
 ## Links
 
-[Product]()
+[Product](https://winniec9153.github.io/sep11-freedom-project/)
 
-[Presentation]()
+[Presentation](https://docs.google.com/presentation/d/1vaUp81HP1WsR_KD63rfYi9NKdcv8apRxlvuIr7HQvXc/edit?usp=drivesdk)
 
 ## Implications
 ##### PROS
