@@ -24,11 +24,11 @@ For my project, I chose to independently study p5Play in order to help me make m
 ##### PROS
 * Global (Pros)
   * Big Systems
-    * Helps promote financial responsibility by encouraging users to track their spending and income.
-    * Can help users develop better budgeting habits and make more informed financial decisions.
+    * This may helps promote financial responsibility by encouraging users to track their spending and income.
+    * it can also help users develop better budgeting habits and make more informed financial decisions.
 * Social
   * Individual
-    * Allows users to monitor their spending and earnings over time through a daily transaction log.
+    * The app can allows users to monitor their spending and earnings over time through a daily transaction log.
     * Makes it easier to understand personal spending habits and stay organized financially.
   * Relationships
     * Can reduce financial stress between family members or partners by helping users keep track of their money.
@@ -48,7 +48,7 @@ For my project, I chose to independently study p5Play in order to help me make m
   * Individual
     * Users cannot review past transactions after closing the app because the data is not saved.
     * The app does not handle negative numbers correctly, which can lead to inaccurate balance calculations.
-    * Incorrect calculations may confuse users and reduce trust in the budgeting information.
+    * If there is incorrect calculations, it may confuse users and reduce trust in the budgeting information.
   * Relationships
     * Inaccurate financial records could cause misunderstandings if users are tracking shared expenses.
     * Lost transaction history may make it difficult to discuss spending habits with family members or partners.
