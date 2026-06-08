@@ -7,12 +7,12 @@ I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering P
 For my project, I chose to independently study p5Play in order to help me make my Budgeting App. p5Play is a JavaScript library that adds sprites, animations, and game mechanics to p5.js, making it easier to create 2D games. I used p5Play for the background animation of my app, which made it less boring. I chose the topic of budgeting because nowadays teenagers and adults don't keep track of their finances and spend their money recklessly. Through this budgeting app, they can become more financially organized and manage their money more wisely.
 
 ## Blog Content:
-* Selecting my tool and topic while experimenting with the sprite function.
-*  Exploring my tool further and watching YouTube tutorials on p5play.
-*  Working on my project over winter break, including tinkering and learning about arrow function property setters and index setters to control a group of circles.
-*  Was focused on understanding the World Object function and how it works in p5play. 
-* I finished my MVP as a whole and showed proof of my MVP in the blog.
-*  Reflecting on in-class Freedom Project presentations and the SEP Expo, while planning improvements even futher beyond the MVP.
+1. Selecting my tool and topic while experimenting with the sprite function.
+2. Exploring my tool further and watching YouTube tutorials on p5play.
+3. Working on my project over winter break, including tinkering and learning about arrow function property setters and index setters to control a group of circles.
+4.  Was focused on understanding the World Object function and how it works in p5play.
+5. I finished my MVP as a whole and showed proof of my MVP in the blog.
+6. Reflecting on in-class Freedom Project presentations and the SEP Expo, while planning improvements even futher beyond the MVP.
 
 ## Links
 
