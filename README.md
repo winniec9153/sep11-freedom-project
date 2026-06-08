@@ -4,8 +4,7 @@ by **X**
 ## Context
 I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP11 is a year-long project all about making something using JavaScript along with a third-party JS tool.
 
-For my project, I chose to independently study p5Play in order to help me make my Budgeting App. So p5Play is a JavaScript library that adds sprites, animations, and game mechanics to p5.js, making it easier to create 2D games. I use p5Play for the background animation of my app which made it less boring. I choose my topic of budgeting because now a days teenagers and adult don't keep track of their finances abd spent their money recklessly. Through this budgeting app they will be more financially organized and manage their money more wisely.
-
+For my project, I chose to independently study p5Play in order to help me make my Budgeting App. p5Play is a JavaScript library that adds sprites, animations, and game mechanics to p5.js, making it easier to create 2D games. I used p5Play for the background animation of my app, which made it less boring. I chose the topic of budgeting because nowadays teenagers and adults don't keep track of their finances and spend their money recklessly. Through this budgeting app, they can become more financially organized and manage their money more wisely.
 ## Links
 
 [Product](https://winniec9153.github.io/sep11-freedom-project/)
